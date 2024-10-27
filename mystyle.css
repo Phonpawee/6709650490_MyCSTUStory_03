@@ -3,9 +3,12 @@ html, body {
     margin: 0;
     padding: 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     body {
         background-color: #FFE9D0;
+        .container {
+            flex-direction: column;
+        }
     }
 }
 
@@ -58,15 +61,27 @@ nav ul li a:hover {
     color: #333;
 }
 
-.left {
+
+main {
+    padding: 20px;
+    width: 100%;
+    margin: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    margin: 0px;
+    padding: 0px;
+}
+
+.item1 {
+    box-sizing: content-box;
+    flex-direction: row;
+    justify-content: start;
     background-color: #FFDEB4;
-    text-align: center;
-    float: left;
-    width: 20%;
-    height: 100vmax;
-    padding-top: 20px;
-    position: sticky;
-    top: 0px;
+    padding: 20px;
+    margin: 0px;
 }
 
 .gettoknow {
@@ -79,38 +94,29 @@ nav ul li a:hover {
     padding: 8px;
 }
 
-.mypic {
+.mypic, .vdo {
     width: 180px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 15px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
 }
 
-.vdo {
-    width: 180px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 7px;
-}
-
-main {
+.item2 {
+    background-color: #FFE9D0;
+    flex-direction: row;
+    justify-content: end;
     padding: 20px;
-    width: 72%;
-    float: right;
-    margin: 30px;
-}
-
-.vlog {
-    width: 920px;
-    padding: 20px;
-    align-items: center;
+    margin: 0px;
 }
 
 .me {
     color: #333;
-    padding-top: 15px;
+    padding: 20px;
     align-items: center;
-    
+    margin: 40px;
 }
 
 footer {
@@ -239,7 +245,7 @@ article {
 .box3 {
     background-color: #FDF7C3;
     width: 920px;
-    height: 90vh;
+    height: 700px;
     padding: 20px;
     margin-top: 30px;
     align-items: center;
@@ -310,7 +316,7 @@ article {
 .box5 {
     background-color: #FDF7C3;
     width: 920px;
-    height: 250vh;
+    height: 1570px;
     padding: 20px;
     margin-top: 30px;
     align-items: center;
